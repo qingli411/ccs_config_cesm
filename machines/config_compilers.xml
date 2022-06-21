@@ -1702,6 +1702,15 @@ using a fortran linker.
   <MPIFC>mpiifort</MPIFC>
 </compiler>
 
+<compiler MACH="eoas" COMPILER="gnu">
+  <FFLAGS>
+    <append> -fallow-argument-mismatch -fallow-invalid-boz</append>
+  </FFLAGS>
+  <SLIBS>
+    <append> -llapack -lblas</append>
+  </SLIBS>
+</compiler>
+
 <compiler MACH="userdefined">
   <CONFIG_ARGS>
     <base/>
